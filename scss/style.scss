@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&display=swap');
+$Strong-Cyan: hsl(171, 66%, 44%);
+$Light-Blue: hsl(233, 100%, 69%);
+$Dark-Grayish-Blue: hsl(210, 10%, 33%);
+$Grayish-Blue: hsl(201, 11%, 66%);
+
+// Global Styling
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family: 'Bai Jamjuree',sans-serif;
+}
+@mixin logo($img_path,$height,$width){
+  background:url($img_path)center no-repeat;
+  background-size: contain;
+  height:$height;
+  width: $width;
+}
+@mixin changes($color,$font_size){
+  color:$color;
+  font-size:$font_size;
+}
+@mixin buttons($bg-color){
+  background-color: $bg-color;
+  border: 0;
+  color: white;
+  font-size: .8rem;
+  padding: .6rem 2.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 2px 8px $bg-color;
+  letter-spacing: .08rem;
+  margin: .5rem;
+  transition: transform .5s ease;
+  &:hover{
+    transform: scale(1.1);
+  }
+  
+  &:focus{
+    outline: none;
+  }
+
+  &:active{
+    transform: scale(.98);
+  }
+  
+}
+.title{
+  color: $Dark-Grayish-Blue;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.subtitle{
+  color: $Grayish-Blue;
+  font-size: .9rem;
+}
+.smallTitle{
+  color: $Dark-Grayish-Blue;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.btn1{
+  @include buttons($Strong-Cyan);
+}
+.btn2{
+  @include buttons($Light-Blue);
+}
+
+.attribution { font-size: 15px; text-align: center;font-family: Arial, Helvetica, sans-serif; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+//End of global styling
+
+.main-container{
+  .header{
+    background: url('../images/bg-header-mobile.png')center no-repeat;
+    background-size: cover;
+    padding-top: 7rem ;
+    text-align: center;
+    &-logo{
+      @include logo('../images/logo.svg',8rem,8rem);
+      margin-bottom: 3rem;
+    }
+    &-title{
+      font-weight: bold;
+      display: inline-flex;
+      span:nth-child(2){
+        display: block;
+      }
+    }
+    &-subtitle{
+      margin-bottom: 3rem;
+      span:nth-child(even){
+        display: block;
+      }
+    }
+    &-button-group{
+      margin-bottom: 5rem;
+    }
+    &-lastMessage{
+      &-subtitle{
+        padding:0rem 3rem;
+      }
+    }
+  }
+  .main{
+    .firstSection{
+      padding:0rem 2rem ;
+      &-upper{
+        .firstSection-image{
+          img{
+            height: 18rem;
+            width: 100%;
+          }
+        }
+        .firstSection-text{
+          text-align: center;
+          margin-bottom: 6rem;
+        }
+      }
+        &-lower{
+          text-align: center;
+          &-image{
+            margin: 3rem 0 6rem 0rem;
+            img{
+              height: 15rem;
+              width: 80%;
+            }
+
+          }
+        }
+    }
+    .secondSection{
+      &-top-brands{
+        text-align: center;
+        .row{
+          div{
+            margin-bottom: 1rem;
+          }
+        }
+      }
+      &-bottom-brands{
+        margin-bottom: 5rem;
+        .row{
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          img{
+            height: 3rem;
+            display: block;
+            margin-bottom: 3rem;
+            width:18rem;
+          }
+        }
+      }
+      &-lower{
+        text-align: center;
+        
+      }
+      .main-button-group{
+        text-align: center;
+        margin-bottom: 8rem;
+      }
+    }
+  }
+  .footer{
+    background-color: hsla(201, 11%, 66%,.2);
+    text-align: center;
+    .row{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .footer-top{
+        @include logo('../images/logo.svg',4rem ,5rem );
+        margin: 2rem auto ;
+        .footer-icons{
+          i{
+            margin-right: 1.8rem;
+          }
+        }
+      }
+     
+    }
+    a{
+      color: $Grayish-Blue;
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .footer-icons{
+      i:hover{
+
+        color: $Dark-Grayish-Blue;
+      }
+    }
+  }
+}
+
+@import 'responsive';

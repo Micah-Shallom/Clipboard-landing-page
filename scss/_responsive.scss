@@ -1,0 +1,71 @@
+@media only  screen and(min-width:769px){
+  span{
+    display: block;
+    line-height: 1.9;
+  }
+  .main-container{
+    .header{
+      background: url('../images/bg-header-desktop.png')center no-repeat;
+      background-size:cover;
+      &-title{
+        font-size: 3rem;
+        span:nth-child(even){
+          display: inline;
+        }
+      }
+      &-subtitle{
+        
+        span:nth-child(even){
+          display: inline;
+        }
+      }
+      
+    }
+    .main{
+      .firstSection{
+        &-upper{
+          .firstSection-image{
+            img{
+              transform: translateX(-5rem);
+              height: 20rem;
+            }
+          }
+          .firstSection-text{
+            text-align: left;
+          }
+        }
+        &-lower{
+          &-image{
+            width: 60%;
+            margin: auto;
+          }
+        }
+      }
+      .secondSection{
+        padding: 0 8rem;
+        &-bottom-brands{
+          .row{
+            img{
+              margin: 1rem;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+    .footer{
+      .row{
+        .footer-links{
+          .row{
+            .links{
+              width: 100%;
+              a{
+                font-size: .93rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

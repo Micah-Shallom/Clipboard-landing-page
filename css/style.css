@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Bai Jamjuree',sans-serif;
+}
+
+.title {
+  color: #4c545d;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #9fabb2;
+  font-size: .9rem;
+}
+
+.smallTitle {
+  color: #4c545d;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.btn1 {
+  background-color: #26baa4;
+  border: 0;
+  color: white;
+  font-size: .8rem;
+  padding: .6rem 2.5rem;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 2px 8px #26baa4;
+          box-shadow: 0 2px 8px #26baa4;
+  letter-spacing: .08rem;
+  margin: .5rem;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.btn1:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.btn1:focus {
+  outline: none;
+}
+
+.btn1:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.btn2 {
+  background-color: #6173ff;
+  border: 0;
+  color: white;
+  font-size: .8rem;
+  padding: .6rem 2.5rem;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 2px 8px #6173ff;
+          box-shadow: 0 2px 8px #6173ff;
+  letter-spacing: .08rem;
+  margin: .5rem;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.btn2:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.btn2:focus {
+  outline: none;
+}
+
+.btn2:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.main-container .header {
+  background: url("../images/bg-header-mobile.png") center no-repeat;
+  background-size: cover;
+  padding-top: 7rem;
+  text-align: center;
+}
+
+.main-container .header-logo {
+  background: url("../images/logo.svg") center no-repeat;
+  background-size: contain;
+  height: 8rem;
+  width: 8rem;
+  margin-bottom: 3rem;
+}
+
+.main-container .header-title {
+  font-weight: bold;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.main-container .header-title span:nth-child(2) {
+  display: block;
+}
+
+.main-container .header-subtitle {
+  margin-bottom: 3rem;
+}
+
+.main-container .header-subtitle span:nth-child(even) {
+  display: block;
+}
+
+.main-container .header-button-group {
+  margin-bottom: 5rem;
+}
+
+.main-container .header-lastMessage-subtitle {
+  padding: 0rem 3rem;
+}
+
+.main-container .main .firstSection {
+  padding: 0rem 2rem;
+}
+
+.main-container .main .firstSection-upper .firstSection-image img {
+  height: 18rem;
+  width: 100%;
+}
+
+.main-container .main .firstSection-upper .firstSection-text {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.main-container .main .firstSection-lower {
+  text-align: center;
+}
+
+.main-container .main .firstSection-lower-image {
+  margin: 3rem 0 6rem 0rem;
+}
+
+.main-container .main .firstSection-lower-image img {
+  height: 15rem;
+  width: 80%;
+}
+
+.main-container .main .secondSection-top-brands {
+  text-align: center;
+}
+
+.main-container .main .secondSection-top-brands .row div {
+  margin-bottom: 1rem;
+}
+
+.main-container .main .secondSection-bottom-brands {
+  margin-bottom: 5rem;
+}
+
+.main-container .main .secondSection-bottom-brands .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .main .secondSection-bottom-brands .row img {
+  height: 3rem;
+  display: block;
+  margin-bottom: 3rem;
+  width: 18rem;
+}
+
+.main-container .main .secondSection-lower {
+  text-align: center;
+}
+
+.main-container .main .secondSection .main-button-group {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.main-container .footer {
+  background-color: rgba(159, 171, 178, 0.2);
+  text-align: center;
+}
+
+.main-container .footer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-container .footer .row .footer-top {
+  background: url("../images/logo.svg") center no-repeat;
+  background-size: contain;
+  height: 4rem;
+  width: 5rem;
+  margin: 2rem auto;
+}
+
+.main-container .footer .row .footer-top .footer-icons i {
+  margin-right: 1.8rem;
+}
+
+.main-container .footer a {
+  color: #9fabb2;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.main-container .footer .footer-icons i:hover {
+  color: #4c545d;
+}
+
+@media only screen and (min-width: 769px) {
+  span {
+    display: block;
+    line-height: 1.9;
+  }
+  .main-container .header {
+    background: url("../images/bg-header-desktop.png") center no-repeat;
+    background-size: cover;
+  }
+  .main-container .header-title {
+    font-size: 3rem;
+  }
+  .main-container .header-title span:nth-child(even) {
+    display: inline;
+  }
+  .main-container .header-subtitle span:nth-child(even) {
+    display: inline;
+  }
+  .main-container .main .firstSection-upper .firstSection-image img {
+    -webkit-transform: translateX(-5rem);
+            transform: translateX(-5rem);
+    height: 20rem;
+  }
+  .main-container .main .firstSection-upper .firstSection-text {
+    text-align: left;
+  }
+  .main-container .main .firstSection-lower-image {
+    width: 60%;
+    margin: auto;
+  }
+  .main-container .main .secondSection {
+    padding: 0 8rem;
+  }
+  .main-container .main .secondSection-bottom-brands .row img {
+    margin: 1rem;
+    display: inline-block;
+  }
+  .main-container .footer .row .footer-links .row .links {
+    width: 100%;
+  }
+  .main-container .footer .row .footer-links .row .links a {
+    font-size: .93rem;
+  }
+}
